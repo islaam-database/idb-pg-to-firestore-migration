@@ -1,1 +1,6 @@
-console.log("Hello");
+import { IslaamDBFromPG } from "./islaam-db-from-pg";
+
+(async () => {
+    const data = new IslaamDBFromPG();
+    await data.init();
+})();
